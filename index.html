@@ -18,12 +18,12 @@
         <div class="header">
             <div class="container">
                 <div class="row">
-                    <div class="col-lg-2">
+                    <div class="col-lg-2 col-md-2 col-3">
                         <div class="logo-container">
                             <img src="./logo.webp" alt="" id="website-logo">
                         </div>
                     </div>
-                    <div class="col-lg-8 my-auto">
+                    <div class="col-lg-8 col-md-6 col-1 my-auto">
             <!--==== Nav bar=======  -->
                         <div class="nav-bar ">
                             <div class="container  ">
@@ -43,9 +43,12 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-lg-2 my-auto  ">
-                       <a href="#" id="registraion-btn">+ Registraion</a>
-                       <a href="#" id="registraion-btn" class="hidden">ok</a>
+                    <div class="col-lg-2 col-md-4 col-8" >
+                        <div class="button-container my-auto">
+                            <a href="#" id="registraion-btn" class="my-auto">+ Registraion</a>
+                            <a href="#" id="menu-btn" class="hidden mt-0 mb-0"><i class="fa-sharp fa-solid fa-bars"></i></a>
+                        </div>
+                        </div> 
                     </div>
                 </div>
             </div>
@@ -53,39 +56,45 @@
         <!--====== Header END =====-->
         <hr class="mt-0 text-white">
         <!-- =====Actaul hero section start=====-->
-        <div class="actual-hero-section">
+        <div class="actual-hero-section ">
+           <div class="animation-image-container">
+            <img src="./left-animation-image.webp" alt="" id="animation-image">
+           </div>
             <div class="container ">
                 <h1 class=" hero-heading text-center ">  <span style="color:#038f42"> 2,568</span> job available</h1>
                 <h1 class="hero-heading text-center">You can choose your dream job</h1>
                 <p class="paragraph-text text-white text-center mt-4">Find great job for build your bright career. Have many job in this plactform.</p>
                 <form action="" id="hero-section-form">
                     <div class="row  ">
-                        <div class="col-lg-1">
-                            
+                        <div class="col-lg-1 col-md-2 "></div>
+                        <div class="col-lg-11">
+                            <div class="container">
+                                <div class="row">
+                                    <div class="col-lg-3 col-md-6 ">
+                                        <input type="text" placeholder="Job title or keywords"  >
+                                    </div>
+                                    <div class="col-lg-3 col-md-6 topmargin-mobile" >
+                                        <select name="" id="" >
+                                            <option value="">Choose City</option>
+                                            <option value="">Mahendranagar</option>
+                                            <option value="">Dhangadhi</option>
+                                            <option value="">Belauri</option>
+                                        </select>
+                                    </div>
+                                    <div class="col-lg-3 col-md-6 topmargin-tab-mobile" >
+                                        <select name="" id="">
+                                            <option value="">Category</option>
+                                            <option value="">Web Developer</option>
+                                            <option value="">UI/UX </option>
+                                            <option value="">Java Developer</option>
+                                        </select>
+                                    </div>
+                                    <div class="col-lg-2 col-md-6 topmargin-tab-mobile" >
+                                        <button type=""  id="search-btn"><i class="fa-sharp fa-solid fa-magnifying-glass"></i> Search </button>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
-                        <div class="col-lg-3">
-                            <input type="text" placeholder="Job title or keywords" >
-                        </div>
-                        <div class="col-lg-3">
-                            <select name="" id=""  >
-                                <option value="">Choose City</option>
-                                <option value="">Mahendranagar</option>
-                                <option value="">Dhangadhi</option>
-                                <option value="">Belauri</option>
-                            </select>
-                        </div>
-                        <div class="col-lg-3" >
-                            <select name="" id=""  >
-                                <option value="">Category</option>
-                                <option value="">Web Developer</option>
-                                <option value="">UI/UX </option>
-                                <option value="">Java Developer</option>
-                            </select>
-                        </div>
-                        <div class="col-lg-1">
-                            <button type=""  id="search-btn"><i class="fa-sharp fa-solid fa-magnifying-glass"></i></button>
-                        </div>
-                        <div class="col-lg-1"></div>
                     </div>
                 </form>
              </div>
