@@ -5,6 +5,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Finate - Job Portal</title>
+    <!-- Bootstrap JS -->
+
     <!-- custom css included -->
     <link rel="stylesheet" href="style.css">
     <!-- bootstrap css included -->
@@ -46,7 +48,7 @@
                     </div>
                     <!--==== Sid eNav bar=======  -->
                     <div class="side-nav-bar">
-                        <div class="header-side-nav-bar py-autp">
+                        <div class="header-side-nav-bar ">
                             <div class="nav-logo-container my-auto">
                                 <a href="./index.html"><img src="./images/green logo.webp" alt="" id="website-logo"></a>
                             </div>
@@ -56,15 +58,16 @@
                                 <hr>
                                 <li class=" "> <a href="./index.html">Home</a></li>
                                 <hr>
-                                <li class="  "> <a href="#">Find Jobs</a> </li>
+                                <li class="  "> <a href="#">Find Jobs <span class="" style="float:right; margin-right: 5px;"><i class="fa-sharp fa-solid fa-plus"></i></span></a> 
+                                </li>
                                 <hr>
                                 <li class="  "> <a href="#">Employers Details</a></li>
                                 <hr>
-                                <li class=" "> <a href="#">Candidates</a></li >
+                                <li class=" "> <a href="#">Candidates  <span class="" style="float:right; margin-right: 5px;"><i class="fa-sharp fa-solid fa-plus"></i></span></a>
                                 <hr>
-                                <li class=" "> <a href=" #"> Blog</a></li>
+                                <li class=" "> <a href=" #"> Blog  <span class="" style="float:right; margin-right: 5px;"><i class="fa-sharp fa-solid fa-plus"></i></span></a></li>
                                 <hr>
-                                <li class=" "> <a href="#"> Pages</a></li>
+                                <li class=" "> <a href="#"> Pages  <span class="" style="float:right; margin-right: 5px;"><i class="fa-sharp fa-solid fa-plus"></i></span></a></li>
                                 <hr>
                                 <li class=" "> <a href="#"> Contact</a></li>
                                 <hr>
@@ -90,7 +93,7 @@
             <img src="./images/left-animation-image.webp" alt="" id="animation-image">
            </div>
             <div class="container ">
-                <h1 class=" hero-heading text-center "><span style="color:#038f42 ;font-size:42px"> 2,568</span> job available</h1>
+                <h1 class=" hero-heading text-center "><span id="job-counter" style="color:#038f42 ;font-size:42px"></span> job available</h1>
                 <h1 class="hero-heading text-center">You can choose your dream job</h1>
                 <p class="paragraph-text text-white text-center mt-4">Find great job for build your bright career. Have many job in this plactform.</p>
                 <form action="" id="hero-section-form">
@@ -560,42 +563,65 @@
                         &copy; 2023 Finate. Made with <span style="color:var(--primary-color)"><b>&#x2764;</b></span> by <span style="color:var(--primary-color)"><b>Bipin Bhatt</b></span> 
                     </p>
                 </div>
+                <!-- For MObile Dropdown -->
+               
             </div>
     </footer>
-</body>
     <!-- bootstrap js inculded -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/js/bootstrap.bundle.min.js" integrity="sha384-qKXV1j0HvMUeCBQ+QVp7JcfGl760yU08IQ+GpUo5hlbpg51QRiuqHAJz8+BrxE/N" crossorigin="anonymous"></script>
+   <!-- jQuery and Bootstrap JavaScript files -->
+   <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.7/dist/umd/popper.min.js" integrity="sha384-zYPOMqeu1DAVkHiLqWBUTcbYfZ8osu1Nd6Z89ify25QV9guujx43ITvfi12/QExE" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.min.js" integrity="sha384-Y4oOpwW3duJdCWv5ly8SCFYWqFDsfob/3GkgExXKV4idmbt98QcxXYs9UoXAB7BZ" crossorigin="anonymous"></script>
+</body>
+    
+
 
     <script>
         var isNavActive=false
           var sideNavBar =document.querySelector(".side-nav-bar")
           var navBtn=document.getElementById('menu-btn')
         function openNav(){
-            
             if(!isNavActive){
                 // var sideNavBar =document.querySelector(".side-nav-bar")
             sideNavBar.style.display="block"
             sideNavBar.style.marginLeft="0px"
-           setTimeout(()=>{
-            navBtn.innerHTML='<i class="fa-solid fa-xmark"></i>'
-           },200)
-            isNavActive=true
+            
+             setTimeout(()=>{
+            navBtn.innerHTML='<i class="fa-solid fa-xmark"></i>'},200)
+            isNavActive=true;
             }
-
             else if(isNavActive) {
                 closeNav()
             }
         }
     function closeNav(){
-        // var sideNavBar =document.querySelector(".side-nav-bar")
-        
-        
-        sideNavBar.style.marginLeft="-800px"
+        sideNavBar.style.marginLeft="-2800px"
         isNavActive=false
         setTimeout(()=>{
             navBtn.innerHTML='<i class="fa-sharp fa-solid fa-bars"></i>';           },200)
     }
+
+    //for typing effecto on the job count fo herosection 
+
+    var job=document.getElementById('job-counter')
+    let jobCount=""
+    setTimeout(()=>{
+        job.innerHTML='2'
+    },100)
+    setTimeout(()=>{
+        job.innerHTML+=','
+    },200)
+    setTimeout(()=>{
+        job.innerHTML+='4'
+    },300)
+    setTimeout(()=>{
+        job.innerHTML+='6'
+    },400)
+    setTimeout(()=>{
+        job.innerHTML+='2'
+    },500)
     </script>
+
+
 </html>
 
 
