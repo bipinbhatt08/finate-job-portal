@@ -88,24 +88,15 @@ body{
 }
 /***************************side nav bar css************************ */
 .nav-logo-container img{
-    /* width: 120px !important; */
     margin-bottom: 5px;
-    /* margin-top: -5px; */
     filter:invert(100%);
 }
-
-.header-side-nav-bar{
-   
-}
 .side-nav-bar{
-    
-    /* display: none !important; */
     position: fixed;
     background-color: white;
-    /* opacity: 0.9; */
     top: 0;
     left: 0;
-    width: 50vw !important;
+    width: 55vw !important;
     overflow: hidden;
     height: 100vh;
     z-index:100 ;
