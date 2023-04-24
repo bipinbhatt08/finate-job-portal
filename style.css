@@ -2,6 +2,7 @@
 
 :root{
     --primary-color:#03a84e;
+    --lighter-green:#4da77684;
     --secondary-color:#656565;
     --background-color:#f4f7f7;
     --footer-text-color:#d8dadf;
@@ -195,7 +196,7 @@ body{
         z-index: -1;
     }
     .apply-now-btn{
-         padding: 5px 10px !important;
+         padding: 7px 15px !important;
     }
 }
 
@@ -324,6 +325,7 @@ body{
     color: black;
     font-weight: bold;
     cursor: pointer;
+    transition: color 0.3s;
 }
 .cname:hover{
     color: var(--primary-color);
@@ -370,7 +372,7 @@ body{
     border: 1px solid var(--primary-color);
     font-size: 14px;
     border-radius: 4px;
-    padding: 5px 15px;
+    padding:7px 15px;
     background-color: var(--primary-color);
     color: white;
     transition: background-color 0.4s,color 0.5s;
@@ -406,7 +408,7 @@ body{
     filter:grayscale(80%);
     opacity: 0.3;
     transition: opacity 0.4s;
-
+    
 }
 .step-icon{
     /* font-size: 30px !important; */
@@ -439,6 +441,75 @@ body{
 }
 .step-description{
     color: var(--secondary-color);
+}
+/******************************** How it Works section ************************/
+.best-candidate{
+    /* background-color: var(--background-color); */
+}
+.best-candidate-item{
+    border: 2px solid var(--background-color);
+    border-radius: 4px;
+    
+    position: relative;
+    background-color: var(--background-color);
+    cursor: pointer;
+    padding: 35px 25px ;
+}
+.bookmark-icon{
+    position: absolute;
+    right: 10px;
+    top: 20px;
+    text-align: center;
+}
+.bookmark-icon i{
+    font-size: 24px;
+    color: var(--secondary-color);
+    /* color: white; */
+}
+.best-candidate-item:hover{
+    background-color: #ffffff;
+    
+}
+.best-candidate-item:hover .bookmark-icon i{
+   color: var(--primary-color);
+} 
+.candidate-image-container{
+    /* border: 1px solid red; */
+    margin-left: auto !important;
+    margin-right: auto !important;
+    width: 170px;
+    height: 170px;
+}
+.candidate-image {
+    width: 100%;
+    height: 100%;
+    border-radius: 5px;
+}
+.candidate-name{
+    font-size: 18px !important;
+}
+.candidate-job{
+    color: var(--primary-color);
+    font-weight: 500 !important;
+}
+
+.rating i{
+    font-size: 12px;
+    color: orange;
+}
+.best-candidate-info .required-skill{
+    font-weight: 500 !important;
+}
+.view-profile-btn{
+    border: 1px solid var(--lighter-green) !important;
+    color: var(--primary-color) !important;
+    background-color: white;
+    transition: background-color 0.4s,color 0.5s !important;
+}
+.view-profile-btn:hover{
+    
+    color: white !important;
+    background-color: var(--primary-color) !important;
 }
 
 /******************************** Footer section ************************/
