@@ -312,7 +312,7 @@ body{
     transition: box-shadow 0.3s;
 }
 .recent-job-item:hover{
-    box-shadow: 0px 0px 60px 1px #d8d8d8a2;
+    box-shadow: 0px 0px 20px 1px #d8d8d889;
 }
 .company-info{
     display: flex;
@@ -364,6 +364,7 @@ body{
 
 }
 .salary{
+    color: black;
     font-weight: 700;
     font-size: 16px;
 }
