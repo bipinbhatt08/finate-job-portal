@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Finate - Job Portal</title>
+    <!-- Bootstrap JS -->
+
+    <!-- custom css included -->
+    <link rel="stylesheet" href="style.css">
+    <!-- bootstrap css included -->
+     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-aFq/bzH65dt+w6FI2ooMVUpc+21e0SRygnTpmBvdBgSdnuTN7QbdgL+OapgHtvPp" crossorigin="anonymous">
+     <!-- fontAwesome inclued -->
+     <script src="https://kit.fontawesome.com/9cebbb4b18.js" crossorigin="anonymous"></script>
+     <style>
+        .hero-section{
+            /* border: 2px solid red; */
+            /* position: relative; */
+            height: 60vh;
+            background: linear-gradient(#2a2d32e0,#2a2d329f), url('./images/bdg.webp');
+            /* background-image: url('./images/breadcrumb-image.webp'); */
+            background-size: cover;
+            background-position: center center;
+        }
+        @media  screen and (max-width:992px) {
+            .hero-section{
+                /* height: 40vh !important; */
+            }
+            .breadcrumbs-container{
+                margin-top: 0px !important;
+            }
+
+
+        }
+        .breadcrumbs-container {
+            height: 100%;
+            margin-top: 50px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            /* border: 1px solid red; */
+        }
+        .breadcrumbs-container h1,p{
+            text-align: center;
+            color: white;
+            /* margin-top: 7rem; */
+        }
+        .breadcrumb{
+            /* border: 1px solid red; */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+        }
+        .active{
+            color: var(--primary-color);
+        }
+        
+        .hero-heading{
+            /* font-size: 42px; */
+        }
+     </style>
+</head>
+<body>
+    <section class="hero-section ">
+        <!--======== HeaderStart ======-->
+        <div class="header">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-2 col-md-2 col-3">
+                        <div class="logo-container">
+                            <img src="./images/logo.webp" alt="" id="website-logo">
+                        </div>
+                    </div>
+                    <div class="col-lg-8 col-md-6 col-1 my-auto">
+            <!--==== Nav bar=======  -->
+                        <div class="nav-bar ">
+                            <div class="container  ">
+                                <div class="row">
+                                    <div class="col-lg-12">
+                                        <ul id="nav-list" class="my-auto" >
+                                            <li class=" nav-item "><a href="./index.html">Home</a></li>
+                                            <li class=" nav-item"><a href="#" class="">Find Jobs</a></li>
+                                            <li class=" nav-item"><a href="#">Employers Details</a></li>
+                                            <li class=" nav-item"><a href="#">Candidates</a></li>
+                                            <li class=" nav-item"><a href="#">Blog</a></li>
+                                            <li class=" nav-item"><a href="./error-page.html">Pages</a></li>
+                                            <li class=" nav-item"><a href="#">Contact</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!--==== Sid eNav bar=======  -->
+                    <div class="side-nav-bar">
+                        <div class="header-side-nav-bar ">
+                            <div class="nav-logo-container my-auto">
+                                <a href="./index.html"><img src="./images/green logo.webp" alt="" id="website-logo"></a>
+                            </div>
+                        </div>
+                        <div class="side-menu">
+                            <ul class="">
+                                <hr>
+                                <li class=" "> <a href="./index.html">Home</a></li>
+                                <hr>
+                                <li class="  "> <a href="#">Find Jobs <span class="" style="float:right; margin-right: 5px;"><i class="fa-sharp fa-solid fa-plus"></i></span></a> 
+                                </li>
+                                <hr>
+                                <li class="  "> <a href="#">Employers Details</a></li>
+                                <hr>
+                                <li class=" "> <a href="#">Candidates  <span class="" style="float:right; margin-right: 5px;"><i class="fa-sharp fa-solid fa-plus"></i></span></a>
+                                <hr>
+                                <li class=" "> <a href=" #"> Blog  <span class="" style="float:right; margin-right: 5px;"><i class="fa-sharp fa-solid fa-plus"></i></span></a></li>
+                                <hr>
+                                <li class=" "> <a href="#"> Pages  <span class="" style="float:right; margin-right: 5px;"><i class="fa-sharp fa-solid fa-plus"></i></span></a></li>
+                                <hr>
+                                <li class=" "> <a href="#"> Contact</a></li>
+                                <hr>
+                            </ul>
+                            
+                        </div>
+                       </div>
+                    <div class="col-lg-2 col-md-4 col-8" >
+                        <div class="button-container my-auto">
+                            <a href="#" id="registraion-btn" class="my-auto">+ Registraion</a>
+                            <a href="#" id="menu-btn" class="hidden mt-0 mb-0" onclick="openNav()"><i class="fa-sharp fa-solid fa-bars"></i></a>
+                        </div>
+                        </div> 
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--====== Header END =====-->
+        <hr class="mt-0 text-white " >
+        <!-- =====Actaul hero section start=====-->
+        <div class="container breadcrumbs-container my5">
+                <div class="breadcrumb my-auto">
+                    <h1 class=" hero-heading  ">404_Error</h1>   
+                    <p class="paragraph-text nav-item"><a href="./index.html" class="">Home</a> <span class="active">// Pages</span></p>
+                </div>          
+             </div>
+    </section>
+</body>
+<script src="./index.js"></script>
+</html>
