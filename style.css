@@ -457,6 +457,7 @@ body{
     background-color: var(--background-color);
     cursor: pointer;
     padding: 35px 25px ;
+    transition: background-color 0.4s;
 }
 .bookmark-icon{
     position: absolute;
@@ -467,6 +468,7 @@ body{
 .bookmark-icon i{
     font-size: 24px;
     color: var(--secondary-color);
+    transition: color 0.4s;
     /* color: white; */
 }
 .best-candidate-item:hover{
