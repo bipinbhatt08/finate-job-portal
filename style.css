@@ -198,6 +198,10 @@ body{
     .apply-now-btn{
          padding: 7px 15px !important;
     }
+     /* for footer? */
+     .footer .section-heading{
+        margin: 20px 0px !important;
+     }
 }
 
 
