@@ -1,0 +1,10 @@
+.error-image-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.sorry-message{
+    font-size: 34px;
+    font-weight: 700;
+    line-height: 150%;
+}
