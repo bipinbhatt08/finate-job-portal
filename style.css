@@ -203,6 +203,10 @@ body{
      .footer .section-heading{
         margin: 20px 0px !important;
      }
+     
+     .footer-social-icons{
+        margin:0px !important;
+    }
 }
 
 
@@ -275,7 +279,13 @@ body{
     .step-of-working img{
         display: none;
     }
-   
+    .contact-form{
+        padding:20px 40px !important;
+     }
+     .contact-form input,.contact-form textarea,.contact-form button{
+        padding: 10px;
+     }
+    
 }
 /******************************** Popular job section ************************/
 .section{
