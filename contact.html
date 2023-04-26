@@ -24,6 +24,7 @@
             background-position: center center;
         }
         @media  screen and (max-width:992px) {
+            
             .breadcrumbs-container{
                 margin-top: 0px !important;
             }
@@ -54,74 +55,69 @@
         .active-page{
             color: var(--primary-color);
         }
-        
-        .register-form-container{
-            margin:0px 60px;
-            background-color: var(--background-color);
-            padding:30px 60px;
-            border-radius: 5px;
-        }
-        .register-now{
-            font-size: 24px;
-            font-weight: 700;
-        }
-        .register-page-btn{
-            border: transparent;
-            text-decoration: none;
-            font-size: 14px;
-            font-weight: 500;
-            padding: 12px 20px;
-            border-radius: 4px;
-            transition: background-color 0.3s,color 0.3s;
-        }
-        .register-page-btn:hover{
-            background-color: var(--primary-color);
-            color: white;
-        }
-        .active-register-btn{
-            background-color: var(--primary-color);
-            color: white;
-        }
-        .register-form input{
-            /* width: 100%; */
-            padding: 12px;
+      .receptionist-image {
+        width: 100%;
+      }
+      .contact-page-second-row {
+        background: var(--background-color) !important;
+        /* padding: 40px 50px; */
+        border-radius: 5px;
+      }
+      .contact-page-icon-container {
+        width: 60px;
+        height:60px;
+        margin-left: auto;
+        margin-right: auto;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: var(--primary-color);
+        border-radius: 100%;
+        color: white;
+      }
+      .contact-page-icon-container i{
+        font-size: 16px;
+      }
+      h5{
+        font-size: 16px ;
+        font-weight: bold;
+      }
+      .text-grey{
+        color: var(--secondary-color);
+        font-size:14px ;
+        font-weight: 400;
+      }
+      .contact-form{
+        background-color: var(--background-color);
+        padding:70px 60px;
+        border-radius: 4px;
+      }
+      
+      .contact-form input,.contact-form textarea,.contact-form button{
+            width: 100%;
+            padding: 15px;
             border: 1px solid var(--footer-text-color);
             border-radius: 4px;
-            /* margin-bottom: 10px; */
             outline-color: var(--primary-color);
-        }
-        #terms-and-condition{
-            text-decoration: none;
-            color:var(--secondary-color) ;
-        }
-        #terms-and-condition:hover{
-            color: var(--primary-color);
-        }
-        #register-submit-btn{
+      }
+      #contact-submit-btn{
             border: 1px solid ;
             border-radius: 5px; 
             color: white;
             background-color: var(--primary-color);
+            transition: background-color 0.4s, color 0.4s;
         }
-        #register-submit-btn:hover{
+        #contact-submit-btn:hover{
             background-color: white;
             color: var(--primary-color);
             border: 1px solid var(--primary-color);
         }
-        .hide-it{
-            display: none;
-        }
-
-        @media  screen and (max-width:555px) {
-            .register-form-container{
-            margin:0px 0px !important;
-            padding:20px 30px !important;
-            border-radius: 5px;
-        }
-        .register-page-btn{
-            /* padding:10px 10px !important; */
-            margin: 5px !important;
-        }
+        .heading-underline{
+            width: 40px;
+            /* margin-top: -5    px; */
+            color: var(--primary-color);
+            opacity: 1;
+            border: 2px solid var(--primary-color) ;
         }
 
      </style>
@@ -201,54 +197,72 @@
         <!-- =====BreadCrumb   start=====-->
         <div class="container breadcrumbs-container my5">
                 <div class="breadcrumb my-auto">
-                    <h1 class=" hero-heading  ">Register Page</h1>   
-                    <p class="paragraph-text nav-item"><a href="./index.html" class="">Home</a> <span class="active-page">// Register</span></p>
+                    <h1 class=" hero-heading  ">Contact</h1>   
+                    <p class="paragraph-text nav-item"><a href="./index.html" class="">Home</a> <span class="active-page">// Pages</span></p>
                 </div>          
         </div>
     </section>
     <section class="section">
         <div class="container">
-           <div class="row">
-            <div class="col-lg-2 col-md-2 col-2"></div>
-            <div class="col-lg-8 col-12">
-                <div class="register-form-container  ">
-                    <h1 class="register-now text-center py-2">Register Now</h1>
-                    <hr>
-                    <div class="text-center my-4">
-                        <button href="" class="register-page-btn mx-2 active-register-btn" id="candidate-register-btn" onclick="changeForm()"><i class="fa-sharp fa-solid fa-user-tie"></i> &nbsp;Candidate</button>
-                        <button href="" class="register-page-btn mx-2" id="employer-register-btn" onclick="changeForm()"> <i class="fa-solid fa-briefcase"></i> &nbsp;Employer</button>
-                    </div>
-                    
-                    <!-- candidate-registraiton -->
-                    <form action="" method="post" class="register-form " id="candidate-registration">
-                        <input type="email" name="" id="" class="mb-3 w-100" placeholder="Email">
-                        <br>
-                        <input type="password" name="" id="" class="mb-3 w-100" placeholder="Password">
-                        <br>
-                        <input type="password" name="" id=""  class=" w-100" placeholder="Confirm Password">
-                
-                       <div  class="my-4"> <input type="checkbox" name="" id="">
-                        <a href="#" id="terms-and-condition"> &nbsp; &nbsp;Accept our terms and condition and privacy policy</a></div>
-                        <button type="submit" id="register-submit-btn" class="w-100  register-page-btn ">Register Now</button>
-                    </form>
-                     <!-- employer-register -->
-                     <form action="" method="post" class="register-form hide-it" id="employer-registration">
-                        <input type="email" name="employerName" id="employer-name" class="mb-3 w-100" placeholder="Email em">
-                        <br>
-                        <input type="password" name="ePassword" id="" class="mb-3 w-100" placeholder="Password">
-                        <br>
-                        <input type="password" name="" id=""  class=" w-100" placeholder="Confirm Password">
-                
-                       <div  class="my-4"> <input type="checkbox" name="" id="">
-                        <a href="#" id="terms-and-condition"> &nbsp; &nbsp;Accept our terms and condition and privacy policy</a></div>
-                        <button type="submit" id="register-submit-btn" class="w-100  register-page-btn ">Register Now</button>
-                    </form>
-                    <p class="mt-4" style="color:var(--secondary-color)">Already have account? <a href="" class="active-page" style="text-decoration: none;">login</a></p>
+            <div class="row mx-1 contact-page-second-row p-5 text-center ">
+                <div class="col-lg-4 col-md-6 col-12 my-3 ">
+                  <div class="contact-page-icon-container text-center">
+                    <i class="fa-solid fa-phone-volume"></i>
+                  </div>
+                  <h5 class= "mb-0 mt-2">Phone: <a href="#" class="mb-0 text-grey">9867889917,</a><a href="#" class="mb-0 text-grey"> 9812702255</a></h5>
+                </div>
+                <div class="col-lg-4 col-md-6 col-12 my-3 ">
+                  <div class="contact-page-icon-container text-center">
+                    <i class="fa-solid fa-envelope"></i>
+                  </div>
+                  <h5 class= "mb-0 mt-2">Email: <a href="#" class="mb-0 text-grey">example@gmail1.com,</a><a href="" class="mb-0 text-grey"> example@gmail2.com</a></h5>
+                </div>
+                <div class="col-lg-4 col-md-6 col-12 my-3 ">
+                  <div class="contact-page-icon-container  text-center">
+                    <i class="fa-solid fa-location-dot"></i>
+                  </div>
+                  <h5 class= "mb-0 mt-2">Address: <span class="mb-0 text-grey">Mahendranagar, Kanchanpur, <br> Nepal</span></h5>
                 </div>
             </div>
-           </div>
+            <div class="row my-5">
+                <div class="col-lg-6 col-md-6 col-12 my-auto order-lg-3">
+                    <div class="receptionist-image-container">
+                        <img src="./images/customer support image.jpg" alt="" class="receptionist-image">
+                    </div>
+                </div>
+                <div class="col-lg-6 col-md-6 col-12 my-auto  order-lg-2  ">
+                    
+                    <form action="" method="get" class="contact-form my-5 ">
+                        <h3 class="form-heading section-heading">Get in touch</h3>
+                    <hr class="heading-underline  mb-4">
+                        <input type="text" placeholder="Full Name" class="my-2">
+                        <br>
+                        <input type="email" placeholder="Email Address" class="my-2">
+                        <br>
+                        <input type="number" placeholder="Phone Number" class="my-2">
+                        <br>
+                        <textarea name="" id="" cols="10" rows="5" placeholder="Your Message" class="my-2"></textarea>
+                        <button id="contact-submit-btn" class="my-2">Send Message</button>
+                    </form>
+                </div>
+            </div>
+            <div class="row  mt-4">
+              <div class="col-lg-12 col-md-12 col-12 ">
+                <div class="map">
+                  <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d113018.06219722188!2d84.26883134844758!3d27.723014883951727!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3994fb6f10ab0081%3A0x11b6475201e5a810!2sGaindakot!5e0!3m2!1sen!2snp!4v1677834448698!5m2!1sen!2snp"
+                    width="100%"
+                    height="400px"
+                    style="border: 0"
+                    allowfullscreen=""
+                    loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade"
+                  ></iframe>
+                </div>
+              </div>
+            </div>
         </div>
-    </section>
+      </section>
     <footer>
         <div class="newsletter w-100">
             <div class="container">
@@ -345,29 +359,4 @@
 </footer>
 </body>
 <script src="./index.js"></script>
-<script>
-    let activeForm='candidate'
-    let employerRegisterBtn=document.getElementById('employer-register-btn')
-    let employerRestrationForm=document.getElementById('employer-registration')
-    let candidateRegisterBtn=document.getElementById('candidate-register-btn')
-    let candidateRestrationForm=document.getElementById('candidate-registration')
-    
-    // function changeForm(){
-    //     if(activeForm ==='candidate'){
-    //         candidateRegisterBtn.classList.remove('active-register-btn')
-    //         employerRegisterBtn.classList.add('active-register-btn')
-    //         employerRestrationForm.classList.add('hide-it')
-    //         candidateRestrationForm.classList.remove('hide-it')
-    //         activeForm='employer'
-    //     }
-        
-    //     else if(activeForm==='employer'){
-    //         candidateRegisterBtn.classList.add('active-register-btn')
-    //         employerRegisterBtn.classList.remove('active-register-btn')
-    //         employerRestrationForm.classList.remove('hide-it')
-    //         candidateRestrationForm.classList.add('hide-it')
-    //         activeForm='employer'
-    //     }
-    // }
-</script>
 </html>

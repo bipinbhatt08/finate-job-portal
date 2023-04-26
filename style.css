@@ -15,6 +15,7 @@
     font-size: 14px;;
 }
 body{
+    overflow-x: hidden;
     
 }
 .header{
@@ -448,11 +449,7 @@ body{
     color: var(--secondary-color);
 }
 /******************************** How it Works section ************************/
-.best-candidate{
-    /* background-image: url('./images/Polygon\ Luminary\ \(2\).svg');
-    background-position: center center;
-    background-size: cover; */
-}
+
 .best-candidate-item{
     border: 2px solid var(--background-color);
     border-radius: 4px;
@@ -522,10 +519,6 @@ body{
 }
 
 /******************************** Footer section ************************/
-footer{
-    /* border: 1px solid black; */
-    /* padding-top: 100px !important; */
-}
 .newsletter{
     padding: 50px 0px;
     background-color: var(--primary-color);
