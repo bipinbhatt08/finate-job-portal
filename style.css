@@ -178,9 +178,12 @@ body{
  .inner-side-menu-list-item:hover a{
     color:var(--primary-color);
  }
- /* .side-nav-bar-parent:hover {
+ .side-nav-bar-parent:hover {
     color: var(--primary-color) !important;
- } */
+ }
+ .side-nav-bar-parent:hover.side-nav-bar-dropdown{
+    display: block !important;
+ }
  
  .side-nav-bar-dropdown .last{
     padding-bottom: 0px;
