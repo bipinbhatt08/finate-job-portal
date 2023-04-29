@@ -132,24 +132,46 @@
         <div class="header">
             <div class="container">
                 <div class="row">
-                    <div class="col-lg-2 col-md-2 col-3">
+                    <div class="col-lg-2 col-md-2 col-3 my-auto">
                         <div class="logo-container">
                             <img src="./images/logo.webp" alt="" id="website-logo">
                         </div>
                     </div>
                     <div class="col-lg-8 col-md-6 col-1 my-auto">
             <!--==== Nav bar=======  -->
-                        <div class="nav-bar ">
+                        <div class="nav-bar  ">
                             <div class="container  ">
                                 <div class="row">
-                                    <div class="col-lg-12">
-                                        <ul id="nav-list" class="my-auto" >
-                                            <li class=" nav-item "><a href="./index.html">Home</a></li>
-                                            <li class=" nav-item"><a href="./jobs.html" class="">Find Jobs</a></li>
+                                    <div class="col-lg-12 " >
+                                        <ul id="nav-list" class="my-0" >
+                                            <li class="nav-item "><a href="./index.html">Home</a></li>
+                                            <li class="nav-item"><a href="./jobs.html" class="">Find Jobs</a>
+                                            <ul class="nav-dropdown ">
+                                                <li class="px-4"><a href="./jobs.html">Jobs</a></li>
+                                                <hr >
+                                                <li class="px-4"><a href="./job-details"> Jobs Details</a></li>
+                                            </ul>
+                                            </li>
                                             <li class=" nav-item"><a href="#">Employers Details</a></li>
-                                            <li class=" nav-item"><a href="./candidate.html">Candidates</a></li>
+                                            <li class=" nav-item"><a href="./candidate.html">Candidates</a>
+                                                <ul class="nav-dropdown ">
+                                                    <li class="px-4"><a href="./candidate.html">Candidate</a></li>
+                                                    <hr >
+                                                    <li class="px-4"><a href=""> Candidate Details</a></li>
+                                                </ul>
+                                            </li>
                                             <li class=" nav-item"><a href="#">Blog</a></li>
-                                            <li class=" nav-item"><a href="./error-page.html">Pages</a></li>
+                                            <li class=" nav-item"><a href="./error-page.html">Pages</a>
+                                                <ul class="nav-dropdown ">
+                                                    <li class="px-4"><a href="./about-us.html">About us</a></li>
+                                                    <hr >
+                                                    <li class="px-4"><a href="#"> Login</a></li>
+                                                    <hr>
+                                                    <li class="px-4"><a href="./register.html">Registraion</a></li>
+                                                    <hr >
+                                                    <li class="px-4"><a href="./error-page.html">Page not Found</a></li>
+                                                </ul>
+                                            </li>
                                             <li class=" nav-item"><a href="./contact.html">Contact</a></li>
                                         </ul>
                                     </div>
@@ -160,33 +182,43 @@
                     <!--==== Sid eNav bar=======  -->
                     <div class="side-nav-bar">
                         <div class="header-side-nav-bar ">
-                            <div class="nav-logo-container my-auto">
-                                <a href="./index.html"><img src="./images/green logo.webp" alt="" id="website-logo"></a>
-                            </div>
+                          <div class="nav-logo-container my-auto">
+                            <a href="./index.html"><img src="./images/green logo.webp" alt="" id="website-logo"></a>
+                          </div>
                         </div>
-                        <div class="side-menu">
-                            <ul class="">
-                                <hr>
-                                <li class=" "> <a href="./index.html">Home</a></li>
-                                <hr>
-                                <li class="  "> <a href="./jobs.html">Find Jobs <span class="" style="float:right; margin-right: 5px;"><i class="fa-sharp fa-solid fa-plus"></i></span></a> 
-                                </li>
-                                <hr>
-                                <li class="  "> <a href="#">Employers Details</a></li>
-                                <hr>
-                                <li class=" "> <a href="./candidate.html">Candidates  <span class="" style="float:right; margin-right: 5px;"><i class="fa-sharp fa-solid fa-plus"></i></span></a>
-                                <hr>
-                                <li class=" "> <a href=" #"> Blog  <span class="" style="float:right; margin-right: 5px;"><i class="fa-sharp fa-solid fa-plus"></i></span></a></li>
-                                <hr>
-                                <li class=" "> <a href="./error-page.html"> Pages  <span class="" style="float:right; margin-right: 5px;"><i class="fa-sharp fa-solid fa-plus"></i></span></a></li>
-                                <hr>
-                                <li class=" "> <a href="./contact.html"> Contact</a></li>
-                                <hr>
-                            </ul>
-                            
+                        <div class="side-menu mt-3">
+                          <ul class="side-menu-list">
+                            <li class="side-menu-list-item-first side-menu-list-item"> <a href="./index.html">Home</a></li>
+                            <li class="side-nav-bar-parent">Find Jobs
+                              <span class="dropdown-icon" style="float:right; margin-right: 5px;"><i class="fa-sharp fa-solid fa-plus"></i></span>
+                              <ul class="side-nav-bar-dropdown mt-3">
+                                <li class="inner-side-menu-list-item"><a href="./jobs.html">Jobs</a></li>
+                                <li class="inner-side-menu-list-item last"><a href=""> Job Details</a></li>
+                              </ul>
+                            </li>
+                            <li class="side-menu-list-item"> <a href="#">Employers Details</a></li>
+                            <li class="side-nav-bar-parent"> Candidates
+                              <span class="dropdown-icon" style="float:right; margin-right: 5px;"><i class="fa-sharp fa-solid fa-plus"></i></span>
+                              <ul class="side-nav-bar-dropdown mt-3">
+                                <li class="inner-side-menu-list-item"><a href="./candidate.html">Candidates</a></li>
+                                <li class="inner-side-menu-list-item last"><a href=""> Candidate Details</a></li>
+                              </ul>
+                            </li>
+                            <li class="side-menu-list-item"> <a href="#"> Blog <span class="dropdown-icon" style="float:right; margin-right: 5px;"><i class="fa-sharp fa-solid fa-plus"></i></span></a></li>
+                            <li class="side-nav-bar-parent"> Pages
+                              <span class="dropdown-icon" style="float:right; margin-right: 5px;"><i class="fa-sharp fa-solid fa-plus"></i></span>
+                              <ul class="side-nav-bar-dropdown mt-3">
+                                <li class="inner-side-menu-list-item"><a href="./jobs.html">About Us</a></li>
+                                <li class="inner-side-menu-list-item"><a href="./jobs.html">Login</a></li>
+                                <li class="inner-side-menu-list-item"><a href="./register.html">Register</a></li>
+                                <li class="inner-side-menu-list-item last"><a href="./error-page.html"> Page Not Found </a></li>
+                              </ul>
+                            </li>
+                            <li class="side-menu-list-item"> <a href="./contact.html"> Contact</a></li>
+                          </ul>
                         </div>
-                       </div>
-                    <div class="col-lg-2 col-md-4 col-8" >
+                      </div>
+                    <div class="col-lg-2 col-md-4 col-8 my-auto" >
                         <div class="button-container my-auto">
                             <a href="./register.html" id="registraion-btn" class="my-auto">+ Registraion</a>
                             <a href="#" id="menu-btn" class="hidden mt-0 mb-0" onclick="openNav()"><i class="fa-sharp fa-solid fa-bars"></i></a>
@@ -195,7 +227,6 @@
                     </div>
                 </div>
             </div>
-        </div>
         <!--====== Header END =====-->
         <hr class="mt-0 text-white " >
         <!-- =====BreadCrumb   start=====-->
@@ -215,32 +246,37 @@
                     <h1 class="register-now text-center py-2">Register Now</h1>
                     <hr>
                     <div class="text-center my-4">
-                        <button href="" class="register-page-btn mx-2 active-register-btn" id="candidate-register-btn" onclick="changeForm()"><i class="fa-sharp fa-solid fa-user-tie"></i> &nbsp;Candidate</button>
-                        <button href="" class="register-page-btn mx-2" id="employer-register-btn" onclick="changeForm()"> <i class="fa-solid fa-briefcase"></i> &nbsp;Employer</button>
+                        <button href="" class="register-page-btn mx-2 active-register-btn" id="candidate-register-btn" onclick=" candidateBtnClick()"><i class="fa-sharp fa-solid fa-user-tie"></i> &nbsp;Candidate</button>
+                        <button href="" class="register-page-btn mx-2" id="employer-register-btn" onclick=" candidateBtnClick()"> <i class="fa-solid fa-briefcase"></i> &nbsp;Employer</button>
                     </div>
                     
                     <!-- candidate-registraiton -->
                     <form action="" method="post" class="register-form " id="candidate-registration">
-                        <input type="email" name="" id="" class="mb-3 w-100" placeholder="Email">
+                        <input type="email" name="" id="" class="mb-3 w-100" placeholder="Email (Candidate)">
                         <br>
                         <input type="password" name="" id="" class="mb-3 w-100" placeholder="Password">
                         <br>
                         <input type="password" name="" id=""  class=" w-100" placeholder="Confirm Password">
                 
-                       <div  class="my-4"> <input type="checkbox" name="" id="">
-                        <a href="#" id="terms-and-condition"> &nbsp; &nbsp;Accept our terms and condition and privacy policy</a></div>
-                        <button type="submit" id="register-submit-btn" class="w-100  register-page-btn ">Register Now</button>
+                       <div  class="my-4"> <input type="checkbox" name="" id="" id="terms-checkbox">
+                        <a href="#" id="terms-and-condition"> &nbsp; &nbsp;Accept our terms and condition and privacy policy</a>
+                        <p class="text-danger mt-3 " style="text-align: left; display: none; " id="terms">Terms and condition must be accepted to continue!!</p>
+
+                    </div>
+                        <button type="submit" id="register-submit-btn" class="w-100  register-page-btn " >Register Now</button>
                     </form>
                      <!-- employer-register -->
                      <form action="" method="post" class="register-form hide-it" id="employer-registration">
-                        <input type="email" name="employerName" id="employer-name" class="mb-3 w-100" placeholder="Email em">
+                        <input type="email" name="employerName" id="employer-name" class="mb-3 w-100" placeholder="Email (Employer)">
                         <br>
                         <input type="password" name="ePassword" id="" class="mb-3 w-100" placeholder="Password">
                         <br>
                         <input type="password" name="" id=""  class=" w-100" placeholder="Confirm Password">
                 
-                       <div  class="my-4"> <input type="checkbox" name="" id="">
-                        <a href="#" id="terms-and-condition"> &nbsp; &nbsp;Accept our terms and condition and privacy policy</a></div>
+                       <div  class="my-4"> <input type="checkbox" name="" id="terms-checkbox" required>
+                        <a href="#" id="terms-and-condition"> &nbsp; &nbsp;Accept our terms and condition and privacy policy</a>
+                        <p class="text-danger mt-3  " style="text-align: left; display: none;" id="terms">Terms and condition must be accepted to continue!!</p>
+                    </div>
                         <button type="submit" id="register-submit-btn" class="w-100  register-page-btn ">Register Now</button>
                     </form>
                     <p class="mt-4" style="color:var(--secondary-color)">Already have account? <a href="" class="active-page" style="text-decoration: none;">login</a></p>
@@ -346,16 +382,39 @@
 </body>
 <script src="./index.js"></script>
 <script>
+    let checkbox=document.getElementById('terms-checkbox')
+
     let activeForm='candidate'
+    let activeBtn='candidate'
     let employerRegisterBtn=document.getElementById('employer-register-btn')
     let employerRestrationForm=document.getElementById('employer-registration')
+
     let candidateRegisterBtn=document.getElementById('candidate-register-btn')
     let candidateRestrationForm=document.getElementById('candidate-registration')
-    
+
+    function candidateBtnClick(){
+        if(activeBtn==='employer'){
+            candidateRegisterBtn.classList.remove('active-register-btn')
+            employerRegisterBtn.classList.add('active-register-btn')
+            employerRestrationForm.classList.remove('hide-it')
+            candidateRestrationForm.classList.add('hide-it')
+            activeBtn='candidate'
+        }
+        else{
+            candidateRegisterBtn.classList.add('active-register-btn')
+            employerRegisterBtn.classList.remove('active-register-btn')
+            employerRestrationForm.classList.add('hide-it')
+            candidateRestrationForm.classList.remove('hide-it')
+            
+            activeBtn='employer'
+        }
+    }
+
+
+
     // function changeForm(){
     //     if(activeForm ==='candidate'){
-    //         candidateRegisterBtn.classList.remove('active-register-btn')
-    //         employerRegisterBtn.classList.add('active-register-btn')
+    //         
     //         employerRestrationForm.classList.add('hide-it')
     //         candidateRestrationForm.classList.remove('hide-it')
     //         activeForm='employer'

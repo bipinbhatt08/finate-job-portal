@@ -18,12 +18,13 @@ body{
     overflow-x: hidden;
     
 }
-.header{
-    /* border: 1px solid red; */
+/* .header{
+    border: 1px solid red;
+    display: flex;
     align-items: center;
     justify-content: center;
-    padding: 20px 0px;
-}
+    padding: 5px 0px;
+} */
 #animation-image{
     position: absolute;
     top: 60%;
@@ -89,6 +90,41 @@ body{
     gap: 10px;   
     /* padding: 10px; */
 }
+
+/* ***********************nav bar dropdown ******************* */
+
+ /* mav drop down */
+ .nav-dropdown{
+     position:absolute !important;
+     top: 80px !important;
+     left: 0px;
+     width: 180px;
+     list-style-type: none;
+    background-color:white !important ;
+    border-radius: 0px 0px 4px 4px;
+    padding: 10px 0px 10px 0px;
+    display: none;
+    /* cursor: pointer; */
+
+}
+.nav-item{
+    /* border: 1px solid red; */
+    position: relative;
+    height: 82px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* cursor: pointer; */
+}
+.nav-dropdown li a{
+    color: black;
+}
+.nav-item:hover .nav-dropdown{
+    display: block !important;
+}
+.nav-item:hover .nav-dropdown {
+ display: block;
+ }
 /***************************side nav bar css************************ */
 .nav-logo-container img{
     margin-bottom: 5px;
@@ -110,6 +146,54 @@ body{
     padding: 20px 15px;
     transition: margin-left 0.6s;
 }
+
+
+.side-nav-bar-dropdown{
+    display: none;
+    
+ }
+ .side-nav-bar-parent {
+    color: var(--secondary-color) !important;
+    /* background-color: red; */
+    /* border: 2px solid; */
+    /* font-size: 14px ;
+    font-weight: 500;
+    /* color: var(--secondary-color); */
+ }
+ .side-menu-list-item,.side-nav-bar-parent{
+    padding: 10px 0px;
+    border-radius: 2px;
+    color:black;
+    border-bottom: 1px solid var(--background-color);
+   
+ }
+ .side-menu-list-item:hover a {
+    /* background-color: var(--background-color); */
+    color: var(--primary-color);
+ }
+ .inner-side-menu-list-item{
+    border-top: 1px solid var(--background-color)!important;
+    padding: 10px 20px;
+ }
+ .inner-side-menu-list-item:hover a{
+    color:var(--primary-color);
+ }
+ .side-nav-bar-parent:hover {
+    color: var(--primary-color) !important;
+ }
+ 
+ .side-nav-bar-dropdown .last{
+    padding-bottom: 0px;
+ }
+/* Hide scrollbar for Chrome, Safari, and Opera */
+.side-nav-bar::-webkit-scrollbar {
+    display: none;
+  }
+  
+  /* Hide scrollbar for Firefox */
+  .side-nav-bar {
+    scrollbar-width: none;
+  }
 .close-icon {
     text-align: center;
     font-size: 35px !important;
@@ -251,6 +335,9 @@ body{
 
 /*************************tablet resposive *************************/
 @media screen and (max-width:992px){
+    .header{
+        padding: 20px 0px !important;
+    }
     .section{
         padding: 80px 0px !important;
     }
@@ -363,6 +450,7 @@ body{
 .job-time{
     color: var(--primary-color);
     font-weight: 600;
+    text-align: left;
 }
 .required-skill{
     color: var(--secondary-color);

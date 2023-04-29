@@ -24,7 +24,6 @@
             background-position: center center;
         }
         @media  screen and (max-width:992px) {
-            
             .breadcrumbs-container{
                 margin-top: 0px !important;
             }
@@ -55,71 +54,92 @@
         .active-page{
             color: var(--primary-color);
         }
-      .receptionist-image {
-        width: 100%;
-      }
-      .contact-page-second-row {
-        background: var(--background-color) !important;
-        /* padding: 40px 50px; */
-        border-radius: 5px;
-      }
-      .contact-page-icon-container {
-        width: 60px;
-        height:60px;
-        margin-left: auto;
-        margin-right: auto;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        background-color: var(--primary-color);
-        border-radius: 100%;
-        color: white;
-      }
-      .contact-page-icon-container i{
-        font-size: 16px;
-      }
-      h5{
-        font-size: 16px ;
-        font-weight: bold;
-      }
-      .text-grey{
-        color: var(--secondary-color);
-        font-size:14px ;
-        font-weight: 400;
-      }
-      .contact-form{
-        background-color: var(--background-color);
-        padding:70px 60px;
-        border-radius: 4px;
-      }
-      
-      .contact-form input,.contact-form textarea,.contact-form button{
-            width: 100%;
-            padding: 15px;
-            border: 1px solid var(--footer-text-color);
-            border-radius: 4px;
-            outline-color: var(--primary-color);
-      }
-      #contact-submit-btn{
-            border: 1px solid ;
-            border-radius: 5px; 
-            color: white;
-            background-color: var(--primary-color);
-            transition: background-color 0.4s, color 0.4s;
+
+        /* mav drop down */
+        .nav-dropdown{
+            list-style-type: none;
+            position:absolute !important;
+            top: 82px !important;
+            left: 0px;
+            overflow-y: hidden;
+            width: 180px;
+            background-color:white !important ;
+            border-radius: 0px 0px 4px 4px;
+            padding: 10px 0px 10px 0px;
+            /* z-index: 100; */
+            display: none;
+            margin-top: 0px;
+            position: absolute;
+
         }
-        #contact-submit-btn:hover{
-            background-color: white;
+        .nav-item{
+            position: relative;
+            height: 82px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .nav-dropdown li.give-border{
+            border-bottom: 2px solid var(--background-color);
+        }
+        .nav-dropdown li:hover{
+            background-color: var(--background-color);
+        }
+
+
+        .nav-dropdown li a{
+            color: black;
+        }
+        .nav-item:hover .nav-dropdown{
+            margin-top: 0px;
+            display: block !important;
+        }
+        .nav-item:hover .nav-dropdown {
+         display: block;
+         }
+         
+         .side-nav-bar-dropdown{
+            display: none;
+            
+         }
+         .side-nav-bar-parent {
+            color: var(--secondary-color) !important;
+            /* background-color: red; */
+            /* border: 2px solid; */
+            /* font-size: 14px ;
+            font-weight: 500;
+            /* color: var(--secondary-color); */
+         }
+         .side-menu-list-item,.side-nav-bar-parent{
+            padding: 10px 0px;
+            border-radius: 2px;
+            color:black;
+            border-bottom: 1px solid var(--background-color);
+           
+         }
+         .side-menu-list-item:hover a {
+            /* background-color: var(--background-color); */
             color: var(--primary-color);
-            border: 1px solid var(--primary-color);
+         }
+         .inner-side-menu-list-item{
+            border-top: 1px solid var(--background-color)!important;
+            padding: 10px 20px;
+         }
+         .inner-side-menu-list-item:hover a{
+            color:var(--primary-color);
+         }
+         .side-nav-bar-parent:hover {
+            color: var(--primary-color) !important;
+         }
+         
+         .side-nav-bar-dropdown .last{
+            padding-bottom: 0px;
+         }
+         .dropdown-icon.rotate {
+        transform: rotate(45deg);
         }
-        .heading-underline{
-            width: 40px;
-            /* margin-top: -5    px; */
-            color: var(--primary-color);
-            opacity: 1;
-            border: 2px solid var(--primary-color) ;
-        }
-        
+
+
      </style>
 </head>
 <body>
@@ -139,33 +159,33 @@
                             <div class="container  ">
                                 <div class="row">
                                     <div class="col-lg-12 " >
-                                        <ul id="nav-list" class="my-0" >
+                                        <ul id="nav-list" class="my-0 " >
                                             <li class="nav-item "><a href="./index.html">Home</a></li>
                                             <li class="nav-item"><a href="./jobs.html" class="">Find Jobs</a>
-                                            <ul class="nav-dropdown ">
-                                                <li class="px-4"><a href="./jobs.html">Jobs</a></li>
-                                                <hr >
-                                                <li class="px-4"><a href="./job-details"> Jobs Details</a></li>
+                                            <ul class="
+                                            nav-dropdown py-0">
+                                                <li class="px-4 py-2 give-border"><a href="./jobs.html">Jobs</a></li>
+                                                <li class="px-4 py-2"><a href="./job-details"> Jobs Details</a></li>
                                             </ul>
                                             </li>
                                             <li class=" nav-item"><a href="#">Employers Details</a></li>
                                             <li class=" nav-item"><a href="./candidate.html">Candidates</a>
-                                                <ul class="nav-dropdown ">
-                                                    <li class="px-4"><a href="./candidate.html">Candidate</a></li>
-                                                    <hr >
-                                                    <li class="px-4"><a href=""> Candidate Details</a></li>
+                                                <ul class="nav-dropdown py-0">
+                                                    <li class=" px-4 py-2 give-border"><a href="./candidate.html">Candidate</a></li>
+                                                    
+                                                    <li class="px-4 py-2 "><a href=""> Candidate Details</a></li>
                                                 </ul>
                                             </li>
                                             <li class=" nav-item"><a href="#">Blog</a></li>
                                             <li class=" nav-item"><a href="./error-page.html">Pages</a>
-                                                <ul class="nav-dropdown ">
-                                                    <li class="px-4"><a href="./about-us.html">About us</a></li>
-                                                    <hr >
-                                                    <li class="px-4"><a href="#"> Login</a></li>
-                                                    <hr>
-                                                    <li class="px-4"><a href="./register.html">Registraion</a></li>
-                                                    <hr >
-                                                    <li class="px-4"><a href="./error-page.html">Page not Found</a></li>
+                                                <ul class="nav-dropdown py-0">
+                                                    <li class="px-4 py-2 give-border"><a href="./about-us.html">About us</a></li>
+                                                 
+                                                    <li class="px-4 py-2 give-border"><a href="#"> Login</a></li>
+                                                    
+                                                    <li class="px-4 py-2 give-border"><a href="./register.html">Registraion</a></li>
+                                                    
+                                                    <li class="px-4 py-2"><a href="./error-page.html">Page not Found</a></li>
                                                 </ul>
                                             </li>
                                             <li class=" nav-item"><a href="./contact.html">Contact</a></li>
@@ -214,6 +234,7 @@
                           </ul>
                         </div>
                       </div>
+                      
                     <div class="col-lg-2 col-md-4 col-8 my-auto" >
                         <div class="button-container my-auto">
                             <a href="./register.html" id="registraion-btn" class="my-auto">+ Registraion</a>
@@ -229,72 +250,18 @@
         <!-- =====BreadCrumb   start=====-->
         <div class="container breadcrumbs-container my5">
                 <div class="breadcrumb my-auto">
-                    <h1 class=" hero-heading  ">Contact</h1>   
+                    <h1 class=" hero-heading  ">404_Error</h1>   
                     <p class="paragraph-text nav-item"><a href="./index.html" class="">Home</a> <span class="active-page">// Pages</span></p>
                 </div>          
         </div>
     </section>
     <section class="section">
         <div class="container">
-            <div class="row mx-1 contact-page-second-row p-5 text-center ">
-                <div class="col-lg-4 col-md-6 col-12 my-3 ">
-                  <div class="contact-page-icon-container text-center">
-                    <i class="fa-solid fa-phone-volume"></i>
-                  </div>
-                  <h5 class= "mb-0 mt-2">Phone: <a href="#" class="mb-0 text-grey">9867889917,</a><a href="#" class="mb-0 text-grey"> 9812702255</a></h5>
-                </div>
-                <div class="col-lg-4 col-md-6 col-12 my-3 ">
-                  <div class="contact-page-icon-container text-center">
-                    <i class="fa-solid fa-envelope"></i>
-                  </div>
-                  <h5 class= "mb-0 mt-2">Email: <a href="#" class="mb-0 text-grey">example@gmail1.com,</a><a href="" class="mb-0 text-grey"> example@gmail2.com</a></h5>
-                </div>
-                <div class="col-lg-4 col-md-6 col-12 my-3 ">
-                  <div class="contact-page-icon-container  text-center">
-                    <i class="fa-solid fa-location-dot"></i>
-                  </div>
-                  <h5 class= "mb-0 mt-2">Address: <span class="mb-0 text-grey">Mahendranagar, Kanchanpur, <br> Nepal</span></h5>
-                </div>
-            </div>
-            <div class="row my-5 ">
-                <div class="col-lg-6 col-md-5 col-12 my-auto order-md-2 order-2  ">
-                    <form action="" method="get" class="contact-form my-5 ">
-                        <h3 class="form-heading section-heading">Get in touch</h3>
-                    <hr class="heading-underline  mb-4">
-                        <input type="text" placeholder="Full Name" class="my-2">
-                        <br>
-                        <input type="email" placeholder="Email Address" class="my-2">
-                        <br>
-                        <input type="number" placeholder="Phone Number" class="my-2">
-                        <br>
-                        <textarea name="" id="" cols="10" rows="5" placeholder="Your Message" class="my-2"></textarea>
-                        <button id="contact-submit-btn" class="my-2">Send Message</button>
-                    </form>
-                </div>
-                <div class="col-lg-6 col-md-7 col-12 my-auto  order-md-2 order-1 ">
-                    <div class="receptionist-image-container ">
-                        <img src="./images/customer support image.jpg" alt="" class="receptionist-image" style="width:100%;">
-                    </div>
-                </div>
-                
-            </div>
-            <div class="row  mt-4">
-              <div class="col-lg-12 col-md-12 col-12 ">
-                <div class="map">
-                  <iframe
-                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d113018.06219722188!2d84.26883134844758!3d27.723014883951727!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3994fb6f10ab0081%3A0x11b6475201e5a810!2sGaindakot!5e0!3m2!1sen!2snp!4v1677834448698!5m2!1sen!2snp"
-                    width="100%"
-                    height="400px"
-                    style="border: 0"
-                    allowfullscreen=""
-                    loading="lazy"
-                    referrerpolicy="no-referrer-when-downgrade"
-                  ></iframe>
-                </div>
-              </div>
-            </div>
+            <!-- <div class="404-image-container">
+                <img src="./images/404.webp" alt="" class="404-image">
+            </div> -->
         </div>
-      </section>
+    </section>
     <footer>
         <div class="newsletter w-100">
             <div class="container">
@@ -391,4 +358,8 @@
 </footer>
 </body>
 <script src="./index.js"></script>
+
+
+
+  
 </html>

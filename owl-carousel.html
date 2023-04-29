@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Owl Carousel Example</title>
+  <!-- Include the jQuery library -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  <!-- Include the Owl Carousel CSS -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css">
+  <!-- Include the Owl Carousel JavaScript -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+  <!-- Initialize Owl Carousel -->
+  <script>
+    $(document).ready(function(){
+      $(".owl-carousel").owlCarousel({
+        items:1,
+        loop:true,
+        autoplay:true,
+        autoplayTimeout:3000,
+        autoplayHoverPause:true,
+        touchDrag:true,
+        mouseDrag:true,
+        nav:true,
+        navText: ["<i class='fa fa-chevron-left'></i>","<i class='fa fa-chevron-right'></i>"],
+        responsive:{
+          0:{
+            items:1
+          },
+          600:{
+            items:1
+          },
+          1000:{
+            items:1
+          }
+        },
+        // Add passive option to the touchstart event listener
+        onInitialized: function() {
+          $(".owl-stage-outer").on("touchstart", function(e) {
+            e.preventDefault();
+          }, {passive: true});
+        }
+      });
+    });
+  </script>
+</head>
+<body>
+  <div class="owl-carousel">
+    <div class="owl-item">
+      ok hajru
+    </div>
+    <div class="owl-item">
+      <img src="https://placehold.it/400x200" alt="Placeholder Image">
+    </div>
+    <div class="owl-item">
+      <img src="https://placehold.it/400x200" alt="Placeholder Image">
+    </div>
+  </div>
+</body>
+<script>
+  onInitialized: function() {
+  $(".owl-stage-outer").on("touchstart", function(e) {
+    e.preventDefault();
+  }, {passive: true});
+},
+
+</script>
+</html>
