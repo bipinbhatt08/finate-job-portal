@@ -25,6 +25,12 @@ body{
     justify-content: center;
     padding: 5px 0px;
 } */
+.float-left{
+    float: left;
+}
+.float-right{
+    float: right;
+}
 #animation-image{
     position: absolute;
     top: 60%;
@@ -713,7 +719,90 @@ body{
     margin-left: -26px !important;
 }
 
-/* =============Footer DropDown==========*/
+/* =============Job Details==========*/
+.job-detail-first-row{
+    background-color: var(--background-color);
+    border-radius: 4px;
+
+}
+.job-detail-company-logo{
+    width: 100px;
+    height: 100px;
+}
+.job-detail-company-logo img{
+    width: 100%;
+}
+.job-detail-company-name{
+    color: var(--primary-color);
+    text-align: left;
+}
+.job-detail-company-address{
+    color: var(--secondary-color);
+    text-align: left;
+}
+.job-detail-salary-and-buton{
+    float: right;
+}
+.job-detail-apply-btn{
+    padding: 15px 30px;
+}
+.job-detail-second-row p ,li{
+    color: var(--secondary-color);
+    text-align: left;
+}
+.heading-underline{
+    width: 40px;
+    /* margin-top: -5    px; */
+    color: var(--primary-color);
+    opacity: 1;
+    border: 2px solid var(--primary-color) ;
+}
+.side-boxes{
+    background-color: var(--background-color);
+    border-radius: 4px;
+}
+
+.side-box-icon-container a{
+    /* width: 400px; */
+    width: 40px;
+    height: 40px;
+    text-decoration: none;
+   color: black;
+   border: 1px solid var(--footer-text-color);
+    border-radius: 4px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: color 0.4s,background-color 0.4s;
+}
+.side-box-icon-container a:hover{
+    color: white;
+    background-color: var(--primary-color);
+    border-color: transparent;
+}
+.side-boxes a i{
+    font-size: 20px;
+}
+.tag-container{
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+.tag{
+    text-decoration: none;
+    color: var(--secondary-color);
+    border: 1px solid var(--secondary-color);
+    padding:8px 15px;
+    border-radius: 20px;
+    transition: color 0.4s, background-color 0.4s,border-color 0.4s;
+}
+.tag:hover{
+    color:white;
+    background-color: var(--primary-color);
+    border-color: transparent;
+}
 /* =============Footer DropDown==========*/
 /* =============Footer DropDown==========*/
 /* =============Footer DropDown==========*/

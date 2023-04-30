@@ -1,0 +1,527 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Finate | Job Portal - Job Details</title>
+    <!-- Bootstrap JS -->
+
+    <!-- custom css included -->
+    <link rel="stylesheet" href="style.css">
+    <!-- bootstrap css included -->
+     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-aFq/bzH65dt+w6FI2ooMVUpc+21e0SRygnTpmBvdBgSdnuTN7QbdgL+OapgHtvPp" crossorigin="anonymous">
+     <!-- fontAwesome inclued -->
+     <script src="https://kit.fontawesome.com/9cebbb4b18.js" crossorigin="anonymous"></script>
+     <style>
+        .hero-section{
+            /* border: 2px solid red; */
+            /* position: relative; */
+            height: 60vh;
+            background: linear-gradient(#2a2d32e0,#2a2d329f), url('./images/bdg.webp');
+            /* background-image: url('./images/breadcrumb-image.webp'); */
+            background-size: cover;
+            background-position: center center;
+        }
+        @media  screen and (max-width:992px) {
+            .breadcrumbs-container{
+                margin-top: 0px !important;
+            }
+
+
+        }
+        .breadcrumbs-container {
+            height: 100%;
+            margin-top: 50px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            /* border: 1px solid red; */
+        }
+        .breadcrumbs-container h1,p{
+            text-align: center;
+            color: white;
+            /* margin-top: 7rem; */
+        }
+        .breadcrumb{
+            /* border: 1px solid red; */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+        }
+        .active-page{
+            color: var(--primary-color);
+        }
+     </style>
+</head>
+<body>
+    <section class="hero-section ">
+        <!--======== HeaderStart ======-->
+        <div class="header">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-2 col-md-2 col-3 my-auto">
+                        <div class="logo-container">
+                            <img src="./images/logo.webp" alt="" id="website-logo">
+                        </div>
+                    </div>
+                    <div class="col-lg-8 col-md-6 col-1 my-auto">
+            <!--==== Nav bar=======  -->
+                        <div class="nav-bar  ">
+                            <div class="container  ">
+                                <div class="row">
+                                    <div class="col-lg-12 " >
+                                        <ul id="nav-list" class="my-0" >
+                                            <li class="nav-item "><a href="./index.html">Home</a></li>
+                                            <li class="nav-item"><a href="./jobs.html" class="">Find Jobs</a>
+                                            <ul class="nav-dropdown ">
+                                                <li class="px-4"><a href="./jobs.html">Jobs</a></li>
+                                                <hr >
+                                                <li class="px-4"><a href="./job-detail.html"> Jobs Details</a></li>
+                                            </ul>
+                                            </li>
+                                            <li class=" nav-item"><a href="#">Employers Details</a></li>
+                                            <li class=" nav-item"><a href="./candidate.html">Candidates</a>
+                                                <ul class="nav-dropdown ">
+                                                    <li class="px-4"><a href="./candidate.html">Candidate</a></li>
+                                                    <hr >
+                                                    <li class="px-4"><a href=""> Candidate Details</a></li>
+                                                </ul>
+                                            </li>
+                                            <li class=" nav-item"><a href="#">Blog</a></li>
+                                            <li class=" nav-item"><a href="./error-page.html">Pages</a>
+                                                <ul class="nav-dropdown ">
+                                                    <li class="px-4"><a href="./about-us.html">About us</a></li>
+                                                    <hr >
+                                                    <li class="px-4"><a href="#"> Login</a></li>
+                                                    <hr>
+                                                    <li class="px-4"><a href="./register.html">Registraion</a></li>
+                                                    <hr >
+                                                    <li class="px-4"><a href="./error-page.html">Page not Found</a></li>
+                                                </ul>
+                                            </li>
+                                            <li class=" nav-item"><a href="./contact.html">Contact</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!--==== Sid eNav bar=======  -->
+                    <div class="side-nav-bar">
+                        <div class="header-side-nav-bar ">
+                          <div class="nav-logo-container my-auto">
+                            <a href="./index.html"><img src="./images/green logo.webp" alt="" id="website-logo"></a>
+                          </div>
+                        </div>
+                        <div class="side-menu mt-3">
+                          <ul class="side-menu-list">
+                            <li class="side-menu-list-item-first side-menu-list-item"> <a href="./index.html">Home</a></li>
+                            <li class="side-nav-bar-parent">Find Jobs
+                              <span class="dropdown-icon" style="float:right; margin-right: 5px;"><i class="fa-sharp fa-solid fa-plus"></i></span>
+                              <ul class="side-nav-bar-dropdown mt-3">
+                                <li class="inner-side-menu-list-item"><a href="./jobs.html">Jobs</a></li>
+                                <li class="inner-side-menu-list-item last"><a href="./job-detail.html"> Job Details</a></li>
+                              </ul>
+                            </li>
+                            <li class="side-menu-list-item"> <a href="#">Employers Details</a></li>
+                            <li class="side-nav-bar-parent"> Candidates
+                              <span class="dropdown-icon" style="float:right; margin-right: 5px;"><i class="fa-sharp fa-solid fa-plus"></i></span>
+                              <ul class="side-nav-bar-dropdown mt-3">
+                                <li class="inner-side-menu-list-item"><a href="./candidate.html">Candidates</a></li>
+                                <li class="inner-side-menu-list-item last"><a href=""> Candidate Details</a></li>
+                              </ul>
+                            </li>
+                            <li class="side-menu-list-item"> <a href="#"> Blog <span class="dropdown-icon" style="float:right; margin-right: 5px;"><i class="fa-sharp fa-solid fa-plus"></i></span></a></li>
+                            <li class="side-nav-bar-parent"> Pages
+                              <span class="dropdown-icon" style="float:right; margin-right: 5px;"><i class="fa-sharp fa-solid fa-plus"></i></span>
+                              <ul class="side-nav-bar-dropdown mt-3">
+                                <li class="inner-side-menu-list-item"><a href="./jobs.html">About Us</a></li>
+                                <li class="inner-side-menu-list-item"><a href="./jobs.html">Login</a></li>
+                                <li class="inner-side-menu-list-item"><a href="./register.html">Register</a></li>
+                                <li class="inner-side-menu-list-item last"><a href="./error-page.html"> Page Not Found </a></li>
+                              </ul>
+                            </li>
+                            <li class="side-menu-list-item"> <a href="./contact.html"> Contact</a></li>
+                          </ul>
+                        </div>
+                      </div>
+                    <div class="col-lg-2 col-md-4 col-8 my-auto" >
+                        <div class="button-container my-auto">
+                            <a href="./register.html" id="registraion-btn" class="my-auto">+ Registraion</a>
+                            <a href="#" id="menu-btn" class="hidden mt-0 mb-0" onclick="openNav()"><i class="fa-sharp fa-solid fa-bars"></i></a>
+                        </div>
+                        </div> 
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--====== Header END =====-->
+        <hr class="mt-0 text-white " >
+        <!-- =====BreadCrumb   start=====-->
+        <div class="container breadcrumbs-container my5">
+                <div class="breadcrumb my-auto">
+                    <h1 class=" hero-heading  ">404_Error</h1>   
+                    <p class="paragraph-text nav-item"><a href="./index.html" class="">Home</a> <span class="active-page">// Pages</span></p>
+                </div>          
+        </div>
+    </section>
+    <section class="section pb-5">
+        <div class="container">
+            <!-- First row start -->
+           <div class="job-detail-first-row p-5">
+            <div class="row">
+                <div class="col-lg-6 col-md-7 d-flex ">
+                    <div class="job-detail-company-logo my-auto">
+                        <img src="./images/job-detail-company.png" alt="">
+                    </div>
+                    <div class="job-detail-info mx-4 my-auto">
+                        <h3 class="section-heading job-detail-job my-1">Senior React Developer</h3>
+                        <p class="job-detail-company-name my-1">Asterdio.inc</p>
+                        
+                        <p class="job-detail-company-address my-1"><i class="fa-solid fa-location-dot"></i> Lalitpur, Nepal &nbsp; <i class="fa-solid fa-phone"></i> +977 9810779998</p>
+                    </div>
+                </div>
+                <div class="col-lg-6 col-md-5 my-auto">
+                    <div class="job-detail-salary-and-buton ">
+                        <p class="salary  mb-4 ">Rs.35000<span style="font-size: 14px; color: var(--secondary-color); font-weight: 400;">/Monthly</span></p>
+                        <div class="">
+                            <a href="#" class="apply-now-btn job-detail-apply-btn">Apply Now</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+           </div>
+           <!-- second row start -->
+           <div class="job-detail-second-row my-5">
+                <div class="row">
+                    <div class="col-lg-7 col-md-12 col-12">
+                        <!-- Description -->
+                        <div class="description ">
+                            <h3 class="section-heading mt-4">Description</h3>
+
+                            <p>It is a long established fact that a reader will be distracted the readable content of page when looking atits layout. The point of using is that has more-or-less normal a distribution of letters, as opposed to usin content publishing packages web page editors. It is a long established fact that a reader will be distracts by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that has look like readable publishing packages and web page editors.</p>
+
+                            <p>It is a long established fact that a reader will be distracted the readable content of a page when looking atits layout. The point of using is that has more-or-less normal a distribution of letters, as opposed to usin content publishing packages web page editors.</p>
+                        </div>
+                        <!-- Responsibilities -->
+                        <div class="Responsibilities">
+                            <h3 class="section-heading mt-4">Responsibilities</h3>
+                            <ul>
+                                <li >Developing custom themes (WordPress.org & ThemeForest Standards)</li>
+                                <li >Creating reactive website designs</li>
+                                <li>Working under strict deadlines</li>
+                                <li>Develop page speed optimized themes</li>
+                            </ul>
+                        </div>
+                        <!-- Requirements -->
+                        <div class="Requirements">
+                            <h3 class="section-heading mt-4">Requirements</h3>
+                            <ul>
+                                <li >Having approved theme/s on ThemeForest will be given high preference</li>
+                                <li >Strong knowledge of WordPress Theme Standards</li>
+                                <li>Ability to convert HTML templates into fully functional WordPress themes.</li>
+                                <li>Good knowledge in O OP PHP and front-end stuffs like HTML, CSS, JS, jQuery, etc.</li>
+                                <li>Moderate knowledge in WordPress Core APIs like options, metadata, REST, hooks, settings, etc.</li>
+                                <li>Ability to debug and fix bugs arising from other developer’s code.</li>
+                                <li>Sense of humor</li>
+                                <li>Hard worker and passionate – we are growing super fast</li>
+                            </ul>
+                        </div>
+                        <!-- Educational Requirements -->
+                        <div class="Educational-Requirements">
+                            <h3 class="section-heading mt-4"> Eduacational Requirements</h3>
+                            <p>It doesn’t matter where you went to college or what your CGPA was as long as you are smart, passionate, ready to work hard, and have fun.</p>
+                        </div>
+                        <!-- Working Hours -->
+                        <div class="Working-Hours">
+                            <h3 class="section-heading mt-4"> Eduacational Requirements</h3>
+                            <ul>
+                                <li >8:00 AM - 5:00 PM</li>
+                                <li >Weekly: 5 days.</li>
+                                <li>Weekend: Saturday, Sunday.</li>
+                            </ul>
+                        </div>
+                        <!-- Benifits -->
+                        <div class="Benifits">
+                            <h3 class="section-heading mt-4"> Benifits</h3>
+                            <ul>
+                                <li>Work in a flat organization where your voice is always heard.</li>
+                                <li>Provident fund.</li>
+                                <li>Gratuity.</li>
+                                <li>Medical Fund.</li>
+                                <li>Having Corporate deals with multiple Hospitals.</li>
+                                <li>Performance bonus.</li>
+                                <li>Increment: Yearly.</li>
+                                <li>Festival Bonus: 2 (Yearly).</li>
+                                <li>Lunch Facilities: Full Subsidize.</li>
+                                <li>Unlimited Tea, Coffee &amp; Snacks.</li>
+                                <li>Annual tour.</li>
+                                <li>Team Outing.</li>
+                                <li>Marriage Bonus and Marriage Leave.</li>
+                                <li>Paternity and Maternity Leave.</li>
+                                <li>Yearly Family Tour.</li>
+                                <li>Knowledge Sharing Session.</li>
+                                <li>Leave Encashment Facilities.</li>
+                                <li>Work with a vibrant team and amazing products.</li>
+                                <li>Table Tennis(Ping Pong) &#127955;</li>
+                                <li>Training and learning materials to improve skills.</li>
+                                <li>Last but not the least, WorldClass Work Environment.</li>
+                            </ul>
+                        </div>
+                        <!-- Statement -->
+                        <div class="Statement">
+                            <h3 class="section-heading mt-4"> Statement</h3>
+                            <p>Finate is committed to creating the happiest company working for and is proud to provide equal opportunity to all. All the qualified applicants will receive consideration for employment without regard to race, color, ancestry, religion, sex, sexual orientation, age, citizenship, marital status, disability, gender identity, or any other basis protected by federal, state, or local law.</p>
+                        </div>
+                        <!-- Apply Now -->
+                        <div class=" my-5 ">
+                            <a href="#" class="apply-now-btn job-detail-apply-btn">Apply Now &nbsp; &nbsp; <i class="fa-solid fa-arrow-right-long"></i></a>
+                        </div>
+                    </div>
+                    <div class="col-lg-5 col-md-12 col-12 my-lg-5 my-sm-3">
+                            <div class="side-boxes p-5 ">
+                                <h3 class="section-heading">Summery</h3>
+                                <hr class="heading-underline  mb-4"><div class="">
+                                <div class="container px-0">
+                                        <div class="row">
+                                            <!-- job type -->
+                                            <div class="col-6 col-lg-4 col-md-6">
+                                                <p>
+                                                    <span class="text-black ">Job Type</span>   
+                                                </p>
+                                            </div>
+                                            <div class="col-6 col-lg-8 col-md-6">
+                                                <p>:&nbsp;&nbsp;&nbsp;&nbsp;<span id="job-type" class="text-success">Full time</span>   
+                                                </p>
+                                            </div>
+                                            <!--  Category -->
+                                            <div class="col-6 col-lg-4 col-md-6">
+                                                <p  class="text-black ">
+                                                    Category   
+                                                </p>
+                                            </div>
+                                            <div class="col-6 col-lg-8 col-md-6">
+                                                <p >:&nbsp;&nbsp;&nbsp;&nbsp;<span id="category">Developement</span></p>
+                                            </div>
+                                            <!--  Posted -->
+                                            <div class="col-6 col-lg-4 col-md-6">
+                                                <p  class="text-black ">
+                                                    Posted   
+                                                </p>
+                                            </div>
+                                            <div class="col-6 col-lg-8 col-md-6">
+                                                <p >:&nbsp;&nbsp;&nbsp;&nbsp;<span id="start-date">24 September, 2023</span></p>
+                                            </div>
+                                            <!--  Salary -->
+                                            <div class="col-6 col-lg-4 col-md-6">
+                                                <p  class="text-black ">
+                                                    Salary   
+                                                </p>
+                                            </div>
+                                            <div class="col-6 col-lg-8 col-md-6">
+                                                <p >:&nbsp;&nbsp;&nbsp;&nbsp;Rs<span id="salary"> 70,000 </span>/ Monthly</p>
+                                            </div>
+                                            <!--  Experience -->
+                                            <div class="col-6 col-lg-4 col-md-6">
+                                                <p  class="text-black ">
+                                                    Experience   
+                                                </p>
+                                            </div>
+                                            <div class="col-6 col-lg-8 col-md-6">
+                                                <p >:&nbsp;&nbsp;&nbsp;&nbsp;<span id="experience"> 05 </span> Years</p>
+                                            </div>
+                                            <!--  Gender -->
+                                            <div class="col-6 col-lg-4 col-md-6">
+                                                <p  class="text-black ">
+                                                    Gender   
+                                                </p>
+                                            </div>
+                                            <div class="col-6 col-lg-8 col-md-6">
+                                                <p >:&nbsp;&nbsp;&nbsp;&nbsp;<span id="gender"> Male or female </span> </p>
+                                            </div>
+                                            <!--  Qualification -->
+                                            <div class="col-6 col-lg-4 col-md-6">
+                                                <p  class="text-black ">
+                                                    Qualification   
+                                                </p>
+                                            </div>
+                                            <div class="col-6 col-lg-8 col-md-6">
+                                                <p >:&nbsp;&nbsp;&nbsp;&nbsp;<span id="qualification"> BSc, Msc</span> </p>
+                                            </div>
+                                            <!--  Level -->
+                                            <div class="col-6 col-lg-4 col-md-6">
+                                                <p  class="text-black ">
+                                                    Level   
+                                                </p>
+                                            </div>
+                                            <div class="col-6 col-lg-8 col-md-6">
+                                                <p >:&nbsp;&nbsp;&nbsp;&nbsp;<span id="Level"> Senior</span> </p>
+                                            </div>
+                                            <!--  Applicants -->
+                                            <div class="col-6 col-lg-4 col-md-6">
+                                                <p  class="text-black ">
+                                                    Applied   
+                                                </p>
+                                            </div>
+                                            <div class="col-6 col-lg-8 col-md-6">
+                                                <p >:&nbsp;&nbsp;&nbsp;&nbsp;<span id="applicants"> 34</span> Applicants</p>
+                                            </div>
+                                            <!--  Deadline -->
+                                            <div class="col-6 col-lg-4 col-md-6">
+                                                <p  class="text-black ">
+                                                    Application End   
+                                                </p>
+                                            </div>
+                                            <div class="col-6 col-lg-8 col-md-6">
+                                                <p >:&nbsp;&nbsp;&nbsp;&nbsp;<span id="applicants" class="text-danger"> 24 October,2023</span> </p>
+                                            </div>
+                                            
+                                        </div>
+                                </div>
+                            </div>
+                        </div>
+                            <div class="side-boxes p-5 mt-5 ">
+                                <h3 class="section-heading">Share With</h3>
+                                <hr class="heading-underline  mb-4">
+                                <div class="container px-0">
+                                    <div class="row">
+                                        <div class="col-lg-2-col-md-2 col-2 side-box-icon-container ">
+                                            <a href=""><i class="fa-brands fa-facebook"></i></a>
+                                        </div>
+                                        <div class="col-lg-2-col-md-2 col-2 side-box-icon-container">
+                                            <a href=""><i class="fa-brands fa-twitter"></i></a>
+                                        </div>
+                                        <div class="col-lg-2-col-md-2 col-2 side-box-icon-container">
+                                            <a href=""><i class="fa-brands fa-linkedin"></i></a>
+                                        </div>
+                                        <div class="col-lg-2-col-md-2 col-2 side-box-icon-container">
+                                        <a href=""> <i class="fa-brands fa-instagram"></i></a>
+                                        </div>
+                                        <div class="col-lg-2-col-md-2 col-2 side-box-icon-container">
+                                        <a href=""> <i class="fa-brands fa-skype"></i></a>
+                                        </div>
+                                        <div class="col-lg-2-col-md-2 col-2 side-box-icon-container">
+                                        <a href=""> <i class="fa-brands fa-whatsapp"></i></a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                                <div class="side-boxes p-5 mt-5 ">
+                                    <h3 class="section-heading">Tags</h3>
+                                    <hr class="heading-underline  mb-4">
+                                    <div class="tag-container  container">
+                                        <p> <a href="#" class="tag">Development</a></p>
+                                        <p><a href="#" class="tag">Web Development Job</a></p>
+                                        <p><a href="#" class="tag">Asterdio.inc</a></p>
+                                        <p><a href="#" class="tag">Full Stack</a></p>
+                                        <p><a href="#" class="tag">Developer</a></p>
+                                        <p><a href="#" class="tag">Website Designer</a></p>
+                                        <p><a href="#" class="tag">Full Time</a></p>
+                                        <p><a href="#" class="tag">Kathmandu</a></p>
+                                    </div>
+                                </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer>
+        <div class="newsletter w-100">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-6 col-12 col-md-12">
+                        <h3 class="text-white newsletter-text" >Subscribe for everyday job Newsletter.</h3>
+                    </div>
+                    <div class="col-lg-6 col-12 col-md-12 ">
+                       <form action="" id="newsletter-form">
+                            <div class="email-subscription">
+                                <div class="input-wrapper">
+                                <input type="email" placeholder="Enter your email address" />
+                                <button type="submit">Subscribe Now</button>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="footer">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-4 col-md-12  footer-company-info">
+                        <div class="footer-logo-container mb-0 mt-0 ">
+                            <img src="./images/green logo.webp" id="footer-logo" alt="">
+                        </div>
+                        <p class="footer-text mt-4 w-75">That necessitat ecommerce platform that optimi your store popularised the release</p>
+                        <div class="footer-social-icons my-5">
+                            <a href=""><i class="fa-brands fa-facebook-f"></i></a>
+                            <a href=""><i class="fa-brands fa-twitter"></i></a>
+                            <a href=""> <i class="fa-brands fa-instagram"></i></a>
+                            <a href=""><i class="fa-brands fa-twitter"></i></a>
+                            <a href=""> <i class="fa-brands fa-instagram"></i></a>
+                           
+                        </div>
+                    </div>
+                    <div class="col-lg-2 col-md-3  ">
+                        <h3 class="section-heading text-white  mb-5">
+                            Company
+                        </h3>
+                        <ul class=" footer-list">
+                           <li><a href="">About Us</a></li>
+                           <li><a href="">Why Extobot</a></li>
+                           <li><a href="./contact.html">Contact With Us</a></li>
+                           <li><a href="">Our Partners</a></li>
+                        </ul>
+                    </div>
+                    <!-- Resources -->
+                    <div class="col-lg-2 col-md-3 col-6 ">
+                        <h3 class="section-heading text-white  mb-5">
+                            Resources
+                        </h3>
+                        <ul class=" footer-list ">
+                           <li><a href="">Quick Links</a></li>
+                           <li><a href="">Job Packages</a></li>
+                           <li><a href="">Post New Job</a></li>
+                           <li><a href="">Job Listings</a></li>
+                        </ul>
+                    </div>
+                    <!-- Legal -->
+                    <div class="col-lg-2 col-md-3 ">
+                        <h3 class="section-heading text-white  mb-5">
+                            Legal
+                        </h3>
+                        <ul class=" footer-list">
+                           <li><a href="">Affiliate</a></li>
+                           <li><a href="">Blog</a></li>
+                           <li><a href="">Help & Support</a></li>
+                           <li><a href="">Careers</a></li>
+                        </ul>
+                    </div>
+                    <!-- Products -->
+                    <div class="col-lg-2 col-md-3 ">
+                        <h3 class="section-heading text-white  mb-5">
+                            Products
+                        </h3>
+                        <ul class="footer-list">
+                           <li><a href="">Start a Trail</a></li>
+                           <li><a href="">How It Works</a></li>
+                           <li><a href="">Features</a></li>
+                           <li><a href="">Price & Planning</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <hr class="text-white ">
+                <p class="footer-text text-center mt-4">
+                    &copy; 2023 Finate. Made with <span style="color:var(--primary-color)"><b>&#x2764;</b></span> by <span style="color:var(--primary-color)"><b>Bipin Bhatt</b></span> 
+                </p>
+            </div>
+            <!-- For MObile Dropdown -->
+           
+        </div>
+</footer>
+</body>
+<script src="./index.js"></script>
+</html>
