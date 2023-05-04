@@ -105,17 +105,20 @@ body{
  /* mav drop down */
  .nav-dropdown{
      position:absolute !important;
-     top: 80px !important;
+     top: 100%!important;
      left: 0px;
      width: 180px;
      list-style-type: none;
+     z-index: 1;
     background-color:white !important ;
     border-radius: 0px 0px 4px 4px;
     padding: 10px 0px 10px 0px;
     display: none;
-    /* cursor: pointer; */
-
 }
+.nav-item:hover .nav-dropdown {
+    display: block;
+  }
+  
 .nav-item{
     /* border: 1px solid red; */
     position: relative;
@@ -131,9 +134,6 @@ body{
 .nav-item:hover .nav-dropdown{
     display: block !important;
 }
-.nav-item:hover .nav-dropdown {
- display: block;
- }
 /***************************side nav bar css************************ */
 .nav-logo-container img{
     margin-bottom: 5px;
