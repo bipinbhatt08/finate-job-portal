@@ -9,6 +9,20 @@
             dropdown.style.display = 'none';
         });
         });
+        const navItems = document.querySelectorAll('.nav-item');
+
+navItems.forEach((navItem) => {
+  const dropdown = navItem.querySelector('.nav-dropdown');
+  
+  navItem.addEventListener('mouseover', () => {
+    dropdown.style.display = 'block';
+  });
+  
+  navItem.addEventListener('mouseout', () => {
+    dropdown.style.display = 'none';
+  });
+});
+
 
         // This is for side nav bar
         var isNavActive=false
