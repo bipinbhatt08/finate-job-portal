@@ -70,20 +70,14 @@ navItems.forEach((navItem) => {
 
     //for typing effecto on the job count fo herosection 
 
-    var job=document.getElementById('job-counter')
-    let jobCount=""
-    setTimeout(()=>{
-        job.innerHTML='2'
-    },100)
-    setTimeout(()=>{
-        job.innerHTML+=','
-    },200)
-    setTimeout(()=>{
-        job.innerHTML+='4'
-    },300)
-    setTimeout(()=>{
-        job.innerHTML+='6'
-    },400)
-    setTimeout(()=>{
-        job.innerHTML+='2'
-    },500)
+  
+    
+    const job = document.getElementById('job-counter');
+let count = 1;
+const intervalId = setInterval(() => {
+  job.innerHTML = count;
+  count+=11;
+  if (count > 1523) {
+    clearInterval(intervalId);
+  }
+}, 10);
