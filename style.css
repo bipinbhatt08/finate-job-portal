@@ -307,6 +307,10 @@ body{
      .footer .section-heading{
         margin: 20px 0px !important;
      }
+     .candiate-detail-buttons{
+        
+        gap:20px !important;
+    } 
      
      
 }
@@ -744,6 +748,7 @@ body{
 }
 .job-detail-company-logo img{
     width: 100%;
+    height: 100%;
 }
 .job-detail-company-name{
     color: var(--primary-color);
@@ -845,7 +850,24 @@ body{
    
 }
 
-/* =============Footer DropDown==========*/
+/* =============Candidate Detail ==========*/
+.candiate-detail-buttons{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap:35px;
+} 
+.candiate-detail-buttons #upper-button{
+    color: black;
+    background-color: white;
+    border-color: var(--footer-text-color);
+}
+.candiate-detail-buttons #upper-button:hover{
+    color: white;
+    background-color: var(--primary-color);
+    border-color: var(--primary-color);
+}
 /* =============Footer DropDown==========*/
 /* =============Footer DropDown==========*/
 
