@@ -868,6 +868,38 @@ body{
     background-color: var(--primary-color);
     border-color: var(--primary-color);
 }
+.primary-color{
+    color: var(--primary-color) !important;
+}
+.left-border-box{
+    padding-left: 30px;
+    padding-right: 30px;
+    border-left: 5px solid var(--background-color);
+    /* border-radius: 3px 0px 0px 3px; */
+    border-collapse: collapse;
+    transition: border-color .3s;
+    /* transition-delay: 0.1s; */
+}
+.left-border-box:hover{
+    border-color:var(--primary-color) ;
+
+}
+.professional-skill{
+
+    border-right: 4px solid var(--background-color);
+    border-radius: 5px;
+}
+.candidate-contact-form input,.candidate-contact-form textarea, .candidate-contact-form button {
+    border: 1px solid var(--footer-text-color);
+    padding: 13px ;
+    border-radius: 4px;
+}
+.candidate-contact-form input:focus,.candidate-contact-form textarea:focus{
+    outline: 1px solid var(--primary-color);
+}
+.candidate-contact-form button{
+    border: 1px solid var(--primary-color);
+}
 /* =============Footer DropDown==========*/
 /* =============Footer DropDown==========*/
 
